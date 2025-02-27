@@ -1,8 +1,9 @@
 import './App.css'
 import {Route, Routes} from "react-router-dom";
-import Home from "./home/Home.tsx";
 import Navbar from "../components/navbar/Navbar.tsx";
 import Services from "./services/Services.tsx";
+import Footer from "../components/footer/footer.tsx";
+import Complaint from "./complaint/Complaint.tsx";
 
 function App() {
 
@@ -11,10 +12,9 @@ function App() {
         <Navbar />
         <Routes>
             <Route path="/" element={<Services />} />
-            {/*<Route path="/about" element={<Home />} />*/}
-            {/*<Route path="/contact" element={<Home />} />*/}
-        <Route path="/complaint" element={<Home />} />
+            <Route path="/complaint" element={<Complaint />} />
         </Routes>
+        <Footer />
     </>
   )
 }
