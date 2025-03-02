@@ -59,6 +59,7 @@
         right: -100%;
         transition: all 0.5s;
         background-color: rgba(252,231,216);
+        z-index: 100000;
     }
     .headerbar.open {
         right: 0;
@@ -75,6 +76,7 @@
         right: 5vw;
         position: absolute;
         font-size: 2rem;
+        z-index: 100000;
     }
 
 

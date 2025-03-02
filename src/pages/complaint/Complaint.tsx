@@ -1,9 +1,13 @@
 import './Complaint.css'
+import Book from '/src/assets/img/book.png'
 
 function ComplaintBook() {
     return (
         <>
-            <h1>Hola</h1>
+            <div className="title">
+                <img src={Book} alt="Book" />
+                <h1>Libro de Reclamaciones</h1>
+            </div>
         </>
     )
 }

@@ -113,6 +113,11 @@ function Services() {
                              price3="S/.35.00"
                 />
             </div>
+            <div id="whatsapp">
+                <a href="http://wa.me/+51982521903" target="_blank" id="toggle1" className="wtsapp">
+                    <i className="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
     );
 }

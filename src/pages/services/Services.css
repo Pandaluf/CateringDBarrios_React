@@ -60,6 +60,62 @@ span {
     color: #cf383c;
 }
 
+#whatsapp .wtsapp {
+    position: fixed;
+    transform: all .5s ease;
+    background-color: #25d366;
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    border-radius: 50px;
+    border-right: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px; /* Aumentado */
+    bottom: 50px;
+    right: 40px;
+    border: 0;
+    z-index: 9999;
+    width: 70px; /* Aumentado */
+    height: 70px; /* Aumentado */
+    line-height: 70px; /* Ajustado */
+}
+
+#whatsapp .wtsapp:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translate(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #25d366;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+#whatsapp .wtsapp:focus {
+    border:none;
+    outline: none;
+}
+
+.menu-open .whatsapp-icon {
+    display: none;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .services h1 {
         font-size: 2rem;
@@ -80,6 +136,11 @@ span {
 
     .services__product__cards__description {
         font-size: 1rem;
+    }
+
+    #whatsapp .wtsapp {
+        bottom: 30px; /* Más abajo */
+        right: 20px;  /* Más a la derecha */
     }
 }
 

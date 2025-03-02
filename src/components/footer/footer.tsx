@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import whatsapp from "/src/assets/img/whatsapp_icon.png";
-import complaintBook from "/src/assets/img/complaint_book.jpg";
+//import complaintBook from "/src/assets/img/complaint_book.jpg";
 import "./footer.css";
 
 function Footer() {
@@ -14,9 +14,11 @@ function Footer() {
                     <img src={whatsapp} alt="whatsapp" className="footerCustom__contact__whatsapp" />
                 </a>
             </div>
+            {/*
             <Link to="/complaint">
-                <img src={complaintBook} alt="Complaint Book" className="footerCustom__complaintBook" />
+                <img src={complaintBook} alt="Comaaplaint Book" className="footerCustom__complaintBook" />
             </Link>
+            */}
         </div>
     );
 }
