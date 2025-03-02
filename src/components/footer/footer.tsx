@@ -2,11 +2,12 @@
 import whatsapp from "/src/assets/img/whatsapp_icon.png";
 //import complaintBook from "/src/assets/img/complaint_book.jpg";
 import "./footer.css";
+import logo from '/src/assets/img/Logo.png'
 
 function Footer() {
     return (
         <div className="footerCustom">
-            <img src="/../src/assets/img/logo.png" alt="logo" className="footerCustom__logo" />
+            <img src={logo} alt="logo" className="footerCustom__logo" />
             <div className="footerCustom__contact">
                 <h2>Contacto</h2>
                 <p>Whatsapp: <a>982521903</a></p>

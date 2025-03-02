@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import logo from '/src/assets/img/Logo.png'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
             <div className="header">
                 <div className={`headerbar ${isOpen ? "open" : ""}`}>
                     <div className="header__account">
-                        <img src="/../src/assets/img/logo.png" alt="logo" height={250} />
+                        <img src={logo} alt="logo" height={250} />
                     </div>
                     <div className="header__nav">
                         <ul>
@@ -36,7 +37,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="header__logo">
-                    <img src="/../src/assets/img/logo.png" alt="logo" />
+                    <img src={logo} alt="logo" />
                 </div>
                 <div className="header__bar" onClick={toggleMenu}>
                     {!isOpen ? (
