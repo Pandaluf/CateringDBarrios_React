@@ -1,0 +1,36 @@
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.video video {
+    width: 40%;
+    max-width: 900px; /* Tamaño máximo en pantallas grandes */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de zoom al pasar el mouse */
+.video video:hover {
+    transform: scale(1.05);
+}
+
+/* 📱 Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .video video {
+        width: 60%;
+    }
+}
+
+/* 📱 Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .video video {
+        width: 90%; /* Ocupa casi todo el ancho en móviles */
+    }
+}

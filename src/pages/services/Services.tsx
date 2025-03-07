@@ -2,6 +2,7 @@ import './Services.css';
 import imagesCard from './imagesCard.ts';
 import CustomCard from "../../components/card/card.tsx";
 import Player1 from "../../components/Player/Player1.tsx";
+import Video from "../../components/video/Video.tsx";
 
 function Services() {
     return (
@@ -119,6 +120,7 @@ function Services() {
                              price3="S/.35.00"
                 />
             </div>
+            <Video />
             <div id="whatsapp">
                 <a href="http://wa.me/+51982521903" target="_blank" id="toggle1" className="wtsapp">
                     <i className="fa-brands fa-whatsapp"></i>
