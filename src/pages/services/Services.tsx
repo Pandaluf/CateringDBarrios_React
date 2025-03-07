@@ -1,11 +1,17 @@
 import './Services.css';
 import imagesCard from './imagesCard.ts';
 import CustomCard from "../../components/card/card.tsx";
+import Player1 from "../../components/Player/Player1.tsx";
 
 function Services() {
     return (
         <div className="services">
-            <h1>Nuestros Productos</h1>
+            <div className="services__header">
+                <h1 className="services__title">Nuestros Productos</h1>
+                <div className="audio-container">
+                    <Player1 />
+                </div>
+            </div>
             <div className="services__grid">
                 <CustomCard  img={imagesCard.caramelCookie1}
                              title="Mini Alfajores"

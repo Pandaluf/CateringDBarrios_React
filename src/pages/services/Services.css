@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .services {
     text-align: center;
     padding: 2rem;
@@ -5,6 +9,40 @@
 
 .services h1 {
     font-size: 3rem;
+}
+
+.services__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%; /* Margen lateral para no pegarlo totalmente */
+}
+
+.services__title {
+    flex-grow: 1;  /* Hace que el título ocupe todo el espacio posible */
+    text-align: center; /* Centra el texto */
+}
+
+.audio-container {
+    min-width: 120px; /* Ajusta según sea necesario */
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.audio-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.audio-button:hover {
+    color: #ff6600; /* Color al pasar el mouse */
 }
 
 .services__grid {
@@ -26,6 +64,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transition-delay: 0.3s;
+}
+
+.services__product__cards.show{
+    transform: scale(1); /* Zoom normal */
+    opacity: 1;
 }
 
 .services__product__cards h2 {
