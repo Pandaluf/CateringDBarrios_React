@@ -1,7 +1,7 @@
 import './Services.css';
 import imagesCard from './imagesCard.ts';
 import CustomCard from "../../components/card/card.tsx";
-//import Player1 from "../../components/Player/Player1.tsx";
+import Player1 from "../../components/Player/Player1.tsx";
 import Video from "../../components/video/Video.tsx";
 
 function Services() {
@@ -10,6 +10,9 @@ function Services() {
             <Video />
             <div className="services__header">
                 <h1 className="services__title">Nuestros Productos</h1>
+                <div className="audio-container">
+                    <Player1 />
+                </div>
             </div>
             <div className="services__grid">
                 <CustomCard  img={imagesCard.caramelCookie1}

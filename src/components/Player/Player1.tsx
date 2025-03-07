@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
-import audioButtom from '/src/assets/audios/Carinito.mp3';
+import audioButtom from '/src/assets/audios/mixConejito.mp3';
 
 const Player1 = () => {
     const [isPlaying, setIsPlaying] = useState(false);
