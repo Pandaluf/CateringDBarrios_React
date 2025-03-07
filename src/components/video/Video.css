@@ -7,7 +7,7 @@
 }
 
 .video video {
-    width: 40%;
+    width: 30%;
     max-width: 900px; /* Tamaño máximo en pantallas grandes */
     height: auto;
     border-radius: 15px;

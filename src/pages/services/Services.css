@@ -16,6 +16,7 @@ body{
     align-items: center;
     width: 100%;
     padding: 0 5%; /* Margen lateral para no pegarlo totalmente */
+    margin-top: 40px;
 }
 
 .services__title {
